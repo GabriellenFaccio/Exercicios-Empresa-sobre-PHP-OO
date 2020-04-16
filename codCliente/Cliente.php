@@ -1,10 +1,10 @@
 <?php
-	class Cliente extends Pessoa{
+	class Cliente extends Pessoas{
 		public $cpf;
 		protected $rg;
 		protected $id;
 
-		public function Entrada($novoCpf){
+		public function setCpf($novoCpf){
 			$this->cpf = $novoCpf;
 		}
 

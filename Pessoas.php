@@ -1,12 +1,12 @@
 <?php
-	class Pessoa{
+	class Pessoas{
 
 		//protected: variavel acessada por ela e por classes filhas.
-		protected $nome;
-		protected $idade;
-		protected $endereco;
+		public $nome;
+		public $idade;
+		/*protected $endereco;
 		protected $numero;
-		protected $cidade;
+		protected $cidade;*/
 
 		const SITUACAO = "PF";
 
@@ -18,7 +18,7 @@
 			$this->idade = $novaIdade;
 		}
 
-		public function setEndereco($novoEndereco){
+		/*public function setEndereco($novoEndereco){
 			$this->endereco = $novoEndereco;
 		}
 
@@ -28,7 +28,7 @@
 
 		public function setCidade($novaCidade){
 			$this->cidade = $novaCidade;
-		}
+		}*/
 
 
 		//---------     GETS      ---------------
@@ -42,7 +42,7 @@
 			return $this->idade;
 		}
 
-		public function getEndereco(){
+		/*public function getEndereco(){
 			return $this->endereco;
 		}
 
@@ -52,7 +52,7 @@
 
 		public function getCidade(){
 			return $this->cidade;
-		}
+		}*/
 
 	}
 
