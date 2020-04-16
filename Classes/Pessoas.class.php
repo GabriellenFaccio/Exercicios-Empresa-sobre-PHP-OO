@@ -10,6 +10,10 @@
 
 		const SITUACAO = "PF";
 
+		public function apresentacao(){
+			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. Trabalho como ".$this->getCargos()." e recebo R$".$this->getSalario()." ao mês.  <br><br>";
+		}
+
 		public function setNome($novoNome){
 			$this->nome = $novoNome;
 		}
