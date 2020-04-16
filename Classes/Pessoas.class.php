@@ -11,7 +11,8 @@
 		const SITUACAO = "PF";
 
 		public function apresentacao(){
-			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. Trabalho como ".$this->getCargos()." e recebo R$".$this->getSalario()." ao mês.  <br><br>";
+			echo "Teste Apresentação <br>";
+			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. CPF:  ".$this->getCpf()." e RG:  ".$this->getRg()."  <br><br>";
 		}
 
 		public function setNome($novoNome){

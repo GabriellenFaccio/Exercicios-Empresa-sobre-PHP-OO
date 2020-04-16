@@ -21,7 +21,18 @@
 	$Pessoa2->setPctCapital("70");
 	$Pessoa2->setPosicao("Diretor");
 
-	$Pessoa1->apresentacao();
+
+	$Pessoa3 = new Cliente;
+	$Pessoa3->setNome("Higor Luis Gilgas");
+	$Pessoa3->setIdade("31");
+
+	$Pessoa3->setCpf("12345678936");
+	$Pessoa3->setRg("12547896");
+
+
+
+
+	$Pessoa3->apresentacao();
 
 	//echo "Olá, meu nome é ".$Pessoa1->getNome()." tenho ".$Pessoa1->getIdade()." de Idade. Trabalho como ".$Pessoa1->getCargos()." e recebo R$".$Pessoa1->getSalario()." ao mês.  <br><br>";
 
