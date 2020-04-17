@@ -29,6 +29,10 @@
 
 		//----------  Gets   -----------------
 
+		public function getClass(){
+			return __CLASS__;
+		}
+
 		public function getCargos(){
 			return $this->cargos;
 		}

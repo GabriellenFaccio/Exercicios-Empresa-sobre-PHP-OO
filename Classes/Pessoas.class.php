@@ -10,9 +10,22 @@
 
 		const SITUACAO = "PF";
 
-		public function apresentacao(){
-			echo "Teste Apresentação <br>";
+		public function apresentacaoPF(){
+			echo "Teste Apresentação PF  <br>";
 			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. CPF:  ".$this->getCpf()." e RG:  ".$this->getRg()."  <br><br>";
+		}
+
+		public function apresentacao(){
+			if($this->getClass() == "Socios")
+				echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." anos de Idade. Trabalho como ".$this->getPosicao()." em minha empresa e possuo cerca de ".$this->getPctCapital()."% de ações dela   <br><br>";
+
+			elseif($this->getClass() == "Funcionarios")
+				echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." anos de Idade. Trabalho como ".$this->getCargos()." e recebo R$".$this->getSalario()." ao mês.  Entrei em ".$this->getDataEntrada()." e possuo ".$this->getFilhos()." filho(s)  <br><br>";
+			elseif($this->getClass() == "Cliente")
+				echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." anos de Idade. Sou cliente dessa empresa e meus documentos são CPF :  ".$this->getCpf()." e também meu RG :  ".$this->getRg()." .  <br>";
+
+			/*echo "Teste Apresentação PJ  <br>";
+			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. ";*/
 		}
 
 		public function setNome($novoNome){

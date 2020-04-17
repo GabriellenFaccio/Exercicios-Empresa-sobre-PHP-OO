@@ -32,6 +32,8 @@
 
 
 
+	$Pessoa1->apresentacao();
+	$Pessoa2->apresentacao();
 	$Pessoa3->apresentacao();
 
 	//echo "Olá, meu nome é ".$Pessoa1->getNome()." tenho ".$Pessoa1->getIdade()." de Idade. Trabalho como ".$Pessoa1->getCargos()." e recebo R$".$Pessoa1->getSalario()." ao mês.  <br><br>";

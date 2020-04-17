@@ -14,6 +14,10 @@
 
 		//---------------   Gets     -------------------
 
+		public function getClass(){
+			return __CLASS__;
+		}
+
 		public function getPctCapital(){
 			return $this->pctCapital;
 		}

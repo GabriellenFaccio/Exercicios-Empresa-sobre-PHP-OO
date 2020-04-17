@@ -19,6 +19,9 @@
 
 		//---------     GETS      ---------------
 
+		public function getClass(){
+			return __CLASS__;
+		}
 
 		public function getCpf(){
 			return $this->cpf;
