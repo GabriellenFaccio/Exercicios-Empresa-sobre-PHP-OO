@@ -1,14 +1,17 @@
 <?php
-	class Pessoas{
+	abstract class Pessoas{
 
+		const SITUACAO = "PF";
+		abstract protected function setNome($novoNome);
+		abstract protected function setIdade($novaIdade);
+
+		abstract protected function apresentacao();
+		/*
 		//protected: variavel acessada por ela e por classes filhas.
 		public $nome;
 		public $idade;
-		/*protected $endereco;
-		protected $numero;
-		protected $cidade;*/
 
-		const SITUACAO = "PF";
+		
 
 		public function apresentacao(){
 			if($this->getClass() == "Socios")
@@ -20,7 +23,7 @@
 				echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." anos de Idade. Sou cliente dessa empresa e meus documentos são CPF :  ".$this->getCpf()." e também meu RG :  ".$this->getRg()." .  <br>";
 
 			/*echo "Teste Apresentação PJ  <br>";
-			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. ";*/
+			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. ";
 		}
 
 		public function setNome($novoNome){
@@ -41,7 +44,7 @@
 
 		public function setCidade($novaCidade){
 			$this->cidade = $novaCidade;
-		}*/
+		}
 
 
 		//---------     GETS      ---------------
