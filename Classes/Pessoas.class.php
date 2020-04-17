@@ -10,11 +10,6 @@
 
 		const SITUACAO = "PF";
 
-		public function apresentacaoPF(){
-			echo "Teste Apresentação PF  <br>";
-			echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." de Idade. CPF:  ".$this->getCpf()." e RG:  ".$this->getRg()."  <br><br>";
-		}
-
 		public function apresentacao(){
 			if($this->getClass() == "Socios")
 				echo "Olá, meu nome é ".$this->nome." tenho ".$this->idade." anos de Idade. Trabalho como ".$this->getPosicao()." em minha empresa e possuo cerca de ".$this->getPctCapital()."% de ações dela   <br><br>";
